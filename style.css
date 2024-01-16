@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: "Outifit", sans-serif;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 18rem;
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 5px;
+
+}
+
+.card>img {
+    height: 265px;
+    width: 270px;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+/* @media(width > 375) and (width < 700) {
+    .attribution {
+        position: relative;
+        text-align: center;
+    }
+
+} */
